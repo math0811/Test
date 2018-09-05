@@ -1,0 +1,32 @@
+body{
+		background-color:white;
+}
+
+img{
+	widht: 100%;
+}
+
+/* The content div soround
+	*every thing in the body
+	*the css make content smaller than the body itself
+	*and centreret
+	*/
+
+#content {
+	widht: 80%
+	margin: auto;
+}
+
+#text{
+		background-color: white;
+}
+
+#list{
+	background-color: white;
+}
+
+/* widht will be 100% of content */
+
+#button1 {
+	widht: 100%;
+}
