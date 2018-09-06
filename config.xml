@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="dk.kea.bluefruit" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="sup.brahs.link" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 
-    <name>Bluefruit</name>
+    <name>Mathias-Test</name>
     <description>
-        A sample app from a phone  BLE hardware.
+        Test af InAppBrowser
     </description>
     <author >
          Lone Østerlund based on an example by Don Coleman: 
@@ -13,13 +13,9 @@
 
     <content src="index.html" />
 	
-	<plugin name="cordova-plugin-ble-central" spec="^1.1.4">
-        <variable name="BLUETOOTH_USAGE_DESCRIPTION" value="Bluetooth development purposes" />
-    </plugin>
-	
-	<engine name="android" spec="~6.4.0" />
-    <engine name="ios" spec="^4.5.3" />
-
+	<plugin name="cordova-plugin-ble-central" spec="^1.1.4" />
+    
+	<plugin name="cordova-plugin-inappbrowser" spec="~2.0.1" />
 	<preference name="phonegap-version" value="cli-6.5.0" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -30,9 +26,5 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-    </platform>
-	<platform name="ios">
-        <preference name="Orientation" value="all" />
-        <preference name="AutoHideSplashScreen" value="false" />
     </platform>
 </widget>
