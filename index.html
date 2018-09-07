@@ -6,31 +6,33 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 			<meta charset = "utf-8">
 			
-			
-			<script> 
-			
-			function scoop () {
-			var payload = 0;
-			}
-						
-			</script>
+			<script type="text/javascript" src="js/index.js"></script>
 	</head>
 	
-	<body>
+	  <body onload="onLoad()">
+	  
+		<ul id="bleDeviceList"> </ul>  
+		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
+		<br>
+		<div id="statusDiv">Status: Disconnected</div>
+		<div id="bleId">DeviceId:</div>
+		<div id="debugDiv"></div>
 	
-    </div>
+    
 			<h1> Bluetooth T&#230;nd </h1>
-		<!-- Content: div-tag with id = "content" -->
-		<img src="test2.jpg" alt="rip" style="width:500px;height:400px;
-		<img src="test2.jpg" alt="sad boi">
+		
+		<img src="test2.jpg" alt="rip" style="width:500px;height:400px;">
 		<p> Tryk på knap for at sende payload til Arduino </p>
-		<button type="button" onclick="scoop('1')">Test</button>
+		<button id="ledOnButton" onclick = "data('1')">Set Device On</button>
+		<input type="text" id="messageInput" value="Hello"/>
+		<br>
+		<button id="sendButton" onclick = "sendData()">Send</button>
 		<p> 
 		<a href="https://www.google.com"> www.google.com </a>
 		</p>
 		
 
-		</div> <!-- div id = "content" ends here -->
+		
 		
 	
 	</body>
