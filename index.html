@@ -6,12 +6,25 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 			<meta charset = "utf-8">
 			
+			<!-- 
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 			
 			<title> Test Phonegab </title>
 			<script type="text/javascript" src="cordova.js"></script> 
 			<script type="text/javascript" src="js/index.js">
-			
+			-->
+			<script>
+			document.addEventListener("deviceready", onDeviceReady, false);
+
+			// Cordova is ready
+			//
+			function onDeviceReady() {
+			// external url
+			var ref = window.open(encodeURI('http://apache.org'), '_blank', 'location=yes');
+			// relative document
+			ref = window.open('next.html', '_self');
+			}
+						
 			</script>
 	</head>
 	
@@ -29,8 +42,10 @@
 		<!-- <button id ="testButton1" onClick = "test()">Open InAppBrowser</button> <br><br>
 		<div id = "log"> </div> -->
 		
+		
+		
 		<p> </p>
-		<a onclick="navigator.app.loadUrl('https://google.com/', { openExternal:true });">Link</a>
+		
 	
 	
 	</body>
