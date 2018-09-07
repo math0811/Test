@@ -12,3 +12,6 @@ function openBrowser(url) {
    var options = "location = yes"
    var ref = cordova.InAppBrowser.open(url, target, options);
 }
+
+function gaybois() {
+	var payload= '1';
