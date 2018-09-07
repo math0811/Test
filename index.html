@@ -10,20 +10,29 @@
 			
 			<title> Test Phonegab </title>
 			<script type="text/javascript" src="cordova.js"></script> 
-			<script type="text/javascript" src="js/index.js"></script>
+			<script type="text/javascript" src="js/index.js">
 			
+			     function onLoad()
+                 {
+                      document.addEventListener("deviceready", onDeviceReady, true);
+                 }
+
+                 function onDeviceReady()
+                 {
+                      // navigator.notification.alert("PhoneGap is working");
+                 }
+
+                 function callAnothePage()
+                 {
+                    window.location = "http://www.google.com";
+                 }
+			</script>
 	</head>
 	
-	<body>
-		
-		<!-- <h1> Bluetooth T&#230;nd </h1>
-		Content: div-tag with id = "content" -->
-		<!-- <div id = "content">
-		<p> </p>
-		<img src="bluetooth.jpg" alt="sad boi">
-		<p> </p> -->
+	<!-- <body>
 		<p>
-		<a href="https://www.google.com"> www.google.com </a>
+		<a href="1"> www.google.com </a>
+		
 		</p>
 		
 		<p> Indtast et nummer 1 el 2 </p> 
@@ -31,13 +40,12 @@
 		<p> v_0.1 </p>
 		
 		<input type="text" id = "urlInput" value="1"/>
-		<button id ="testButton1" onClick = "test()">Open InAppBrowser</button> <br><br>
+		<!-- <button id ="testButton1" onClick = "test()">Open InAppBrowser</button> <br><br> -->
+		<body onload="onLoad();">
+            <h1>Welcome to PhoneGap</h1>
+            <h2>Edit assets/www/index.html</h2>
+            <button name="buttonClick" onclick="callAnothePage()">Click Me!</button>
 		<div id = "log"> </div>
-		
-		<!-- <p><button type="button" onclick="window.alert(1);">Test</button></p> -->
-		
-
-		<!-- </div> <!-- div id = "content" ends here -->
 	</body>
 </html>
 	
