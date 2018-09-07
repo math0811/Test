@@ -12,25 +12,11 @@
 			<script type="text/javascript" src="cordova.js"></script> 
 			<script type="text/javascript" src="js/index.js">
 			
-			     function onLoad()
-                 {
-                      document.addEventListener("deviceready", onDeviceReady, true);
-                 }
-
-                 function onDeviceReady()
-                 {
-                      // navigator.notification.alert("PhoneGap is working");
-                 }
-
-                 function callAnothePage()
-                 {
-                    window.location = "http://www.google.com";
-                 }
 			</script>
 	</head>
 	
-	<!-- <body>
-		<p>
+	<body>
+		<!-- <p>
 		<a href="1"> www.google.com </a>
 		
 		</p>
@@ -40,12 +26,13 @@
 		<p> v_0.1 </p>
 		
 		<input type="text" id = "urlInput" value="1"/>
-		<!-- <button id ="testButton1" onClick = "test()">Open InAppBrowser</button> <br><br> -->
-		<body onload="onLoad();">
-            <h1>Welcome to PhoneGap</h1>
-            <h2>Edit assets/www/index.html</h2>
-            <button name="buttonClick" onclick="callAnothePage()">Click Me!</button>
-		<div id = "log"> </div>
+		<!-- <button id ="testButton1" onClick = "test()">Open InAppBrowser</button> <br><br>
+		<div id = "log"> </div> -->
+		
+		<p> </p>
+		<a href="#" onclick="window.open('http://www.google.com', '_system');">www.google.com</a>
+	
+	
 	</body>
 </html>
 	
